@@ -30,3 +30,5 @@ Results:
     "HollowInterest685"
     "OptimalAccount883"
     "EnthusiasticSpring57"
+    
+https://www.nuget.org/packages/NicknameGenerator/
