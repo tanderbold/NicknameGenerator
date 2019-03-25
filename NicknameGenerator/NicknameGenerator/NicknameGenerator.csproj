@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Easy to use library for nicknames generating</Description>
+    <PackageProjectUrl>https://github.com/tanderbold/NicknameGenerator</PackageProjectUrl>
+    <Copyright>Tanderbold</Copyright>
+    <RepositoryUrl>https://github.com/tanderbold/NicknameGenerator</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
