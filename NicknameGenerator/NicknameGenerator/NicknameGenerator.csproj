@@ -10,6 +10,10 @@
     <RepositoryUrl>https://github.com/tanderbold/NicknameGenerator</RepositoryUrl>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net461|AnyCPU'">
+    <DocumentationFile>D:\repo\git\NicknameGenerator\NicknameGenerator\NicknameGenerator\NicknameGenerator.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Update="Adjectives.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

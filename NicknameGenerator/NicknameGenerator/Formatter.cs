@@ -4,8 +4,17 @@ using System.Text;
 
 namespace NicknameGenerator
 {
+    /// <summary>
+    /// Class for formating string with descriptor
+    /// </summary>
     public class Formatter
     {
+        /// <summary>
+        /// Method for formating string with descriptor
+        /// </summary>
+        /// <param name="value">source string</param>
+        /// <param name="desc">format descriptor</param>
+        /// <returns>string after formating</returns>
         public static string Format(string value, FormatDescriptor desc)
         {
             if (desc == FormatDescriptor.AllLowercase)

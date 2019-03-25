@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NicknameGenerator</name>
+    </assembly>
+    <members>
+        <member name="T:NicknameGenerator.FormatDescriptor">
+            <summary>
+            Format descriptor of part of nickname
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.FormatDescriptor.FirstUppercase">
+            <summary>
+            Nickname
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.FormatDescriptor.AllUppercase">
+            <summary>
+            NICKNAME
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.FormatDescriptor.AllLowercase">
+            <summary>
+            nickname
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.FormatDescriptor.FirstLowercase">
+            <summary>
+            nICKNAME
+            </summary>
+        </member>
+        <member name="T:NicknameGenerator.Formatter">
+            <summary>
+            Class for formating string with descriptor
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.Formatter.Format(System.String,NicknameGenerator.FormatDescriptor)">
+            <summary>
+            Method for formating string with descriptor
+            </summary>
+            <param name="value">source string</param>
+            <param name="desc">format descriptor</param>
+            <returns>string after formating</returns>
+        </member>
+        <member name="T:NicknameGenerator.Generator">
+            <summary>
+            Main class for generating
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.Generator.#ctor(System.Collections.Generic.List{NicknameGenerator.Part},System.Collections.Generic.Dictionary{NicknameGenerator.TypeOfPart,NicknameGenerator.ISourcePart})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="parts">Parts of nickname that you want in needed orer</param>
+            <param name="sources">Sources of data for parts</param>
+        </member>
+        <member name="M:NicknameGenerator.Generator.Generate">
+            <summary>
+            Method for generating nickname
+            </summary>
+            <returns>nickname</returns>
+        </member>
+        <member name="T:NicknameGenerator.IGenerator">
+            <summary>
+            Methods of generator
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.IGenerator.Generate">
+            <summary>
+            Method for generating nickname
+            </summary>
+            <returns>nickname</returns>
+        </member>
+        <member name="T:NicknameGenerator.ISourcePart">
+            <summary>
+            Methods of the data source
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.ISourcePart.List">
+            <summary>
+            Collection of elements of the source
+            </summary>
+            <returns>Collection of elements</returns>
+        </member>
+        <member name="M:NicknameGenerator.ISourcePart.Count">
+            <summary>
+            Count of elements of the source
+            </summary>
+            <returns>Count of elements</returns>
+        </member>
+        <member name="M:NicknameGenerator.ISourcePart.Get(System.Int32)">
+            <summary>
+            Get element of the source by index
+            </summary>
+            <param name="index">Index of element</param>
+            <returns>Value from source with index</returns>
+        </member>
+        <member name="T:NicknameGenerator.Part">
+            <summary>
+            Description of part of your nickname
+            </summary>
+        </member>
+        <member name="P:NicknameGenerator.Part.Type">
+            <summary>
+            Type of part (adjective, noun, number)
+            </summary>
+        </member>
+        <member name="P:NicknameGenerator.Part.Format">
+            <summary>
+            Format of part (uppercase, lowercase)
+            </summary>
+        </member>
+        <member name="T:NicknameGenerator.SourcePartFromFile">
+            <summary>
+            Source for reading data from speciefed file
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartFromFile.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="filepath">File path to the source data</param>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartFromFile.Count">
+            <summary>
+            Count of elements of the source
+            </summary>
+            <returns>Count of elements</returns>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartFromFile.Get(System.Int32)">
+            <summary>
+            Get element of the source by index
+            </summary>
+            <param name="index">Index of element</param>
+            <returns>Value from source with index</returns>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartFromFile.List">
+            <summary>
+            Collection of elements of the source
+            </summary>
+            <returns>Collection of elements</returns>
+        </member>
+        <member name="T:NicknameGenerator.SourcePartNumber">
+            <summary>
+            Source for integer numbers
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartNumber.#ctor(System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="max">Maximal integer of source</param>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartNumber.Count">
+            <summary>
+            Count of elements of the source
+            </summary>
+            <returns>Count of elements</returns>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartNumber.Get(System.Int32)">
+            <summary>
+            Get element of the source by index
+            </summary>
+            <param name="index">Index of element</param>
+            <returns>Value from source with index</returns>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartNumber.List">
+            <summary>
+            Collection of elements of the source
+            </summary>
+            <returns>Collection of elements</returns>
+        </member>
+        <member name="T:NicknameGenerator.TypeOfPart">
+            <summary>
+            List of acceptable parts
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.TypeOfPart.Adjective">
+            <summary>
+            Adjective part of nickname
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.TypeOfPart.Noun">
+            <summary>
+            Noun part of nickname
+            </summary>
+        </member>
+        <member name="F:NicknameGenerator.TypeOfPart.Number">
+            <summary>
+            Number part of nickname
+            </summary>
+        </member>
+    </members>
+</doc>

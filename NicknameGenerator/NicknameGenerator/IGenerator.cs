@@ -9,6 +9,10 @@ namespace NicknameGenerator
     /// </summary>
     public interface IGenerator
     {
+        /// <summary>
+        /// Method for generating nickname
+        /// </summary>
+        /// <returns>nickname</returns>
         string Generate();
     }
 }

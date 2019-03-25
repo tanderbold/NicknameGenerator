@@ -4,12 +4,20 @@ using System.Text;
 
 namespace NicknameGenerator
 {
+    /// <summary>
+    /// Main class for generating
+    /// </summary>
     public class Generator: IGenerator
     {
         private readonly Dictionary<TypeOfPart, ISourcePart> sources;
         private readonly List<Part> parts;
         private Random random;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="parts">Parts of nickname that you want in needed orer</param>
+        /// <param name="sources">Sources of data for parts</param>
         public Generator(List<Part> parts, Dictionary<TypeOfPart, ISourcePart> sources)
         {
             this.parts = parts;
@@ -17,6 +25,10 @@ namespace NicknameGenerator
             random = new Random();
         }
 
+        /// <summary>
+        /// Method for generating nickname
+        /// </summary>
+        /// <returns>nickname</returns>
         public string Generate()
         {
             StringBuilder nickname = new StringBuilder();
