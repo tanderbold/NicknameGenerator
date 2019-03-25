@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+**/.vs/
+**/packages/
+**/DeployPackage/
+*.suo
+*.user
+*.VC.db
+*.odt#
