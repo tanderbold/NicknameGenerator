@@ -110,6 +110,177 @@
             Format of part (uppercase, lowercase)
             </summary>
         </member>
+        <member name="T:NicknameGenerator.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:NicknameGenerator.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:NicknameGenerator.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="P:NicknameGenerator.Resources.Adjectives">
+             <summary>
+               Ищет локализованную строку, похожую на aback
+            abaft
+            abandoned
+            abashed
+            aberrant
+            abhorrent
+            abiding
+            abject
+            ablaze
+            abnormal
+            aboard
+            aboriginal
+            abortive
+            abounding
+            abrasive
+            abrupt
+            absent
+            absorbed
+            absorbing
+            abstracted
+            absurd
+            abusive
+            acceptable
+            accessible
+            accidental
+            accurate
+            acoustic
+            acrid
+            ad hoc
+            adamant
+            adaptable
+            addicted
+            adhesive
+            adjoining
+            adorable
+            afraid
+            agonizing
+            ahead
+            alcoholic
+            alert
+            alike
+            alive
+            alleged
+            alluring
+            aloof
+            ambiguous
+            ambitious
+            amuck
+            ancient
+            animated
+            apathetic
+            aquatic
+            aromatic
+            aspiring
+            a [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="P:NicknameGenerator.Resources.Nouns">
+             <summary>
+               Ищет локализованную строку, похожую на account
+            act
+            adjustment
+            advertisement
+            agreement
+            air
+            amount
+            amusement
+            animal
+            answer
+            apparatus
+            approval
+            argument
+            art
+            attack
+            attempt
+            attention
+            attraction
+            authority
+            back
+            balance
+            base
+            behavior
+            belief
+            birth
+            bit
+            bite
+            blood
+            blow
+            body
+            brass
+            bread
+            breath
+            brother
+            building
+            burn
+            burst
+            business
+            butter
+            canvas
+            care
+            cause
+            chalk
+            chance
+            change
+            cloth
+            coal
+            color
+            comfort
+            committee
+            company
+            comparison
+            competition
+            condition
+            connection
+            control
+            cook
+            copper
+            copy
+            cork
+            copy
+            cou [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="T:NicknameGenerator.SourcePartDefault">
+            <summary>
+            Default Source for part (Adjectives and Nouns accepted)
+            </summary>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartDefault.#ctor(NicknameGenerator.TypeOfPart)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="type">Type of part that you need</param>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartDefault.Count">
+            <summary>
+            Count of elements of the source
+            </summary>
+            <returns>Count of elements</returns>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartDefault.Get(System.Int32)">
+            <summary>
+            Get element of the source by index
+            </summary>
+            <param name="index">Index of element</param>
+            <returns>Value from source with index</returns>
+        </member>
+        <member name="M:NicknameGenerator.SourcePartDefault.List">
+            <summary>
+            Collection of elements of the source
+            </summary>
+            <returns>Collection of elements</returns>
+        </member>
         <member name="T:NicknameGenerator.SourcePartFromFile">
             <summary>
             Source for reading data from speciefed file

@@ -10,13 +10,17 @@ namespace TestNicknameGenerator
     {
         [TestMethod]
         public void TestGenerate()
-        {
+        {            
             Dictionary<TypeOfPart, ISourcePart> sources = new Dictionary<TypeOfPart, ISourcePart>()
             {
+                // Custom file
                 { TypeOfPart.Adjective, new SourcePartFromFile("Adjectives.txt") },
-                { TypeOfPart.Noun, new SourcePartFromFile("Nouns.txt") },
+                // Default values
+                { TypeOfPart.Noun, new SourcePartDefault(TypeOfPart.Noun) },
+                // Numbers
                 { TypeOfPart.Number, new SourcePartNumber(1000) }
             };
+            
 
             List<Part> parts = new List<Part>()
             {
