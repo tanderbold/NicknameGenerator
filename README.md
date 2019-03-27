@@ -27,12 +27,6 @@ IGenerator generator = new Generator(parts, sources);
 var firstnick = generator.Generate();
 var secondnick = generator.Generate();
 var thirdnick = generator.Generate();
-
-
-IGenerator generator = new Generator(parts, sources);
-var firstnick = generator.Generate();
-var secondnick = generator.Generate();
-var thirdnick = generator.Generate(); 
 ```
 
 Results:
